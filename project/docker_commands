@@ -1,11 +1,41 @@
 ## Docker commands used to build the application 
 # TODO: insert the docker build command
-
+docker build -t techtrends .
 ## Docker commands used to run the application
 # TODO: insert the docker run command
-
+docker run -d -p  7111:3111 techtrends
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
-
+docker logs 3b84285ae425e925ed42b3baf48c9c7c72f70ecbee5d31f2066a32e35901e5df
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug:2023-01-26 22:39:48,945,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2023-01-26 22:39:48,945,  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2023-01-26 22:40:28,804, 172.17.0.1 - - [26/Jan/2023 22:40:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:40:28,859, 172.17.0.1 - - [26/Jan/2023 22:40:28] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:40:29,280, 172.17.0.1 - - [26/Jan/2023 22:40:29] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:app:2023-01-26 22:41:00,460, 26/01/2023, 22:41:00 From @app.route('/<int:post_id>'): Retrieved Article 2020 CNCF Annual Report
+INFO:werkzeug:2023-01-26 22:41:00,470, 172.17.0.1 - - [26/Jan/2023 22:41:00] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:41:00,500, 172.17.0.1 - - [26/Jan/2023 22:41:00] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2023-01-26 22:49:02,942, 172.17.0.1 - - [26/Jan/2023 22:49:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:49:02,997, 172.17.0.1 - - [26/Jan/2023 22:49:02] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:2023-01-26 22:49:08,184, 26/01/2023, 22:49:08 From @app.route('/<int:post_id>'): Retrieved Article KubeCon + CloudNativeCon 2021
+INFO:werkzeug:2023-01-26 22:49:08,185, 172.17.0.1 - - [26/Jan/2023 22:49:08] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:49:08,218, 172.17.0.1 - - [26/Jan/2023 22:49:08] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2023-01-26 22:49:12,662, 172.17.0.1 - - [26/Jan/2023 22:49:12] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:49:12,691, 172.17.0.1 - - [26/Jan/2023 22:49:12] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:2023-01-26 22:49:28,411, 26/01/2023, 22:49:28 From @app.route('/create'): New article created: I love Docker
+INFO:werkzeug:2023-01-26 22:49:28,412, 172.17.0.1 - - [26/Jan/2023 22:49:28] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:2023-01-26 22:49:28,421, 172.17.0.1 - - [26/Jan/2023 22:49:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:49:28,464, 172.17.0.1 - - [26/Jan/2023 22:49:28] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:2023-01-26 22:49:33,666, 26/01/2023, 22:49:33 From @app.route('/about'): Retrieved About Us
+INFO:werkzeug:2023-01-26 22:49:33,670, 172.17.0.1 - - [26/Jan/2023 22:49:33] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:49:33,700, 172.17.0.1 - - [26/Jan/2023 22:49:33] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2023-01-26 22:49:36,069, 172.17.0.1 - - [26/Jan/2023 22:49:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-01-26 22:49:36,103, 172.17.0.1 - - [26/Jan/2023 22:49:36] "GET /static/css/main.css HTTP/1.1" 304 -
