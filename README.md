@@ -1,3 +1,3 @@
-# nd064_C1
+# Cloud Native Application Architecture
 
-**Instructor**: https://github.com/kgamanji
+
